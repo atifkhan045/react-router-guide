@@ -1,11 +1,15 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import Header from './component/header/Header'
+import Footer from './component/footer/Footer'
+
 
 function App() {
   return (
     <>
-     <div className='text-center text-white bg-black'>
-      Started Again
-     </div>
+     <Header/>
+     <Outlet/>
+     <Footer/>
     </>
   )
 }
